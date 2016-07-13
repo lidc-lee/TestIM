@@ -52,6 +52,7 @@ public class RegisterController implements RegisterView.Listener, OnClickListene
                     @Override
                     public void gotResult(final int status, final String desc) {
                         dialog.dismiss();
+                        Log.e("register",status+"");
                         if (status == 0) {
                             LoginDialog loginDialog = new LoginDialog();
                             mLoginDialog = loginDialog.createLoadingDialog(mContext);

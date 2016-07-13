@@ -129,15 +129,20 @@
         <!-- Required. AppKey copied from Portal -->
         <meta-data
             android:name="JPUSH_APPKEY"
-            android:value="fb4b8c797cab2e17154f12a9" /><!--  </>值来自开发者平台取得的AppKey-->
+            android:value="1d91ce3bffef5a0493350ddd" /><!--  </>值来自开发者平台取得的AppKey-->
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.ResigerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

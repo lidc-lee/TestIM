@@ -14,14 +14,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //注册用户
-        APP.get().register("gmy123","123456");
-//        APP.get().login("gmy123", "123456");
+
     }
 
     @Override
     protected void onResume() {
-        JPushInterface.onResume(this);
+//        JPushInterface.onResume(this);
 //        APP.get().setTag("18316960576");
         super.onResume();
 
@@ -29,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onPause() {
-        JPushInterface.onPause(this);
+//        JPushInterface.onPause(this);
         super.onPause();
     }
 

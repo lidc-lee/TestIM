@@ -66,6 +66,7 @@ public class LoginController implements LoginView.Listener, OnClickListener,
                     @Override
                     public void gotResult(final int status, final String desc) {
                         dialog.dismiss();
+                        Log.e("LoginController",status+"");
                         if (status == 0) {
                             mContext.startMainActivity();
                         } else {
